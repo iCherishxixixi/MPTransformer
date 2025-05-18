@@ -1,0 +1,22 @@
+# MPTransformer
+This is the trial-run repository for MPT, and the code within will be organized and refined later.
+### Data Preprocessing
+The aortic dataset used in this project is sourced from the [SegA Challenge](https://multicenteraorta.grand-challenge.org/).  
+The preprocessing pipeline follows the standard procedures used in [nnU-Net v1](https://github.com/MIC-DKFZ/nnUNet/tree/nnunetv1) and [MedNeXt](https://github.com/MIC-DKFZ/MedNeXt), ensuring compatibility with state-of-the-art segmentation frameworks.
+Set the path to the preprocessed data in the designated location in [`paths.py`](paths.py)([line 29-31 of paths.py](https://github.com/iCherishxixixi/MPTransformer/blob/f829ba518f41c0a726406f5d31cca9fb64c6ee01/nnunet_mpt/paths.py#L29)).
+### Set Up the Environment
+You can either set up the environment using `setup.py` provided in this project, or directly use the environment configuration from [MedNeXt](https://github.com/MIC-DKFZ/MedNeXt).
+### Training and Testing
+We provide three versions of the MPT model:
+
+- **3D MPT**: The standard 3D version of the MPT model.
+- **3D MPTUNETR**: A hybrid model combining CNN and Transformer architectures.
+- **2D MPT**: A 2D model based on an improved version of [TransUNet](https://github.com/Beckschen/TransUNet).
+
+The training and testing scripts for each model are as follows:
+
+- 3D MPT: [`nnunet_mpt/run/MPT.sh`](nnunet_mpt/run/MPT.sh)
+- MPTUNETR: [`nnunet_mpt/run/MPTUNETR.sh`](nnunet_mpt/run/MPTUNETR.sh)
+- 2D MPT: [`nnunet_mpt/run/MPT2D.sh`](nnunet_mpt/run/MPT2D.sh)
+### Training Weights
+Our training weights will be open-sourced soon.
