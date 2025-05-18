@@ -1,31 +1,32 @@
 #!/bin/bash
 
-# ====== Config Section ======
+# === Config ===
 GITHUB_USERNAME="iCherishxixixi"
 REPO_NAME="MPTransformer"
-GITHUB_TOKEN="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"  # replace with your real GitHub token
-GIT_EMAIL="494778997@example.com"         # replace with your GitHub email
+GIT_EMAIL="494778997@example.com"  # Replace with your GitHub email
 
-# ====== Git Initialization and Upload ======
+# === Navigate to target folder (optional, "." means current folder) ===
+cd . || { echo "Folder not found"; exit 1; }
 
-# Set user identity
+# Set Git identity
 git config --global user.name "$GITHUB_USERNAME"
 git config --global user.email "$GIT_EMAIL"
 
-# Initialize local git repo
-git init
+# Initialize Git if not already initialized
+if [ ! -d ".git" ]; then
+  git init
+fi
 
-# Add all files
+# Remove existing remote if any
+git remote remove origin 2>/dev/null
+
+# Add SSH remote
+git remote add origin git@github.com:$GITHUB_USERNAME/$REPO_NAME.git
+
+# Add files and commit
 git add .
+git commit -m "Initial commit" || echo "Nothing new to commit"
 
-# Make initial commit
-git commit -m "Initial commit"
-
-# Add remote origin with embedded token for authentication
-git remote add origin https://$GITHUB_USERNAME:$GITHUB_TOKEN@github.com/$GITHUB_USERNAME/$REPO_NAME.git
-
-# Set branch name to main
+# Rename and push to main branch
 git branch -M main
-
-# Push to GitHub
 git push -u origin main
