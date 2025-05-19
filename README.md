@@ -13,10 +13,10 @@ We provide three versions of the MPT model:
 - **3D MPTUNETR**: A hybrid model combining CNN and Transformer architectures.
 - **2D MPT**: A 2D model based on an improved version of [TransUNet](https://github.com/Beckschen/TransUNet).
 
-The training and testing scripts for each model are as follows:
+Switch the root directory to [`nnunet_mpt/run`](nnunet_mpt/run), then the training and testing scripts for each model are as follows:
 
-- 3D MPT: [`nnunet_mpt/run/MPT.sh`](nnunet_mpt/run/MPT.sh)
-- MPTUNETR: [`nnunet_mpt/run/MPTUNETR.sh`](nnunet_mpt/run/MPTUNETR.sh)
-- 2D MPT: [`nnunet_mpt/run/MPT2D.sh`](nnunet_mpt/run/MPT2D.sh)
+- 3D MPT: [`MPT.sh`](nnunet_mpt/run/MPT.sh)
+- MPTUNETR: [`MPTUNETR.sh`](nnunet_mpt/run/MPTUNETR.sh)
+- 2D MPT: [`MPT2D.sh`](nnunet_mpt/run/MPT2D.sh)
 ### Training Weights
 Our training weights will be open-sourced soon.
