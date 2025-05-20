@@ -11,7 +11,7 @@ We provide three versions of the MPT model:
 
 - **3D MPT**: The standard 3D version of the MPT model.
 - **3D MPTUNETR**: A hybrid model combining CNN and Transformer architectures.
-- **2D MPT**: A 2D model based on an improved version of [TransUNet](https://github.com/Beckschen/TransUNet).
+- **2D MPT**: A 2D model based on an improved version of [TransUNet](https://github.com/Beckschen/TransUNet). Compared to the original MPT, 2DMPT provides higher-resolution inputs and achieves better Dice scores. However, the lack of inter-slice connectivity for the 2D model poses challenges for maintaining segmentation continuity.
 
 Switch the root directory to [`nnunet_mpt/run`](nnunet_mpt/run), then the training and testing scripts for each model are as follows:
 
