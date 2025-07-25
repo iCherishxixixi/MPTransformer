@@ -18,5 +18,3 @@ Switch the root directory to [`nnunet_mpt/run`](nnunet_mpt/run), then the traini
 - 3D MPT: [`MPT.sh`](nnunet_mpt/run/MPT.sh)
 - MPTUNETR: [`MPTUNETR.sh`](nnunet_mpt/run/MPTUNETR.sh)
 - 2D MPT: [`MPT2D.sh`](nnunet_mpt/run/MPT2D.sh)
-### Training Weights
-Our training weights will be open-sourced soon.
