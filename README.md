@@ -1,7 +1,7 @@
 # MPTransformer
 This is the trial-run repository for MPT, and the code within will be organized and refined later.
 ### Data Preprocessing
-The aortic dataset used in this project is sourced from the [SegA Challenge](https://multicenteraorta.grand-challenge.org).  
+The aortic dataset used in this project is sourced from the [AVT Challenge](https://multicenteraorta.grand-challenge.org).  
 The preprocessing pipeline follows the standard procedures used in [nnU-Net v1](https://github.com/MIC-DKFZ/nnUNet/tree/nnunetv1) and [MedNeXt](https://github.com/MIC-DKFZ/MedNeXt), ensuring compatibility with state-of-the-art segmentation frameworks.
 Set the path to the preprocessed data in the designated location in [`paths.py`](paths.py)([line 29-31 of paths.py](nnunet_mpt/paths.py#L29-L31)).
 ### Set the Environment
