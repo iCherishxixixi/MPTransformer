@@ -18,3 +18,5 @@ Switch the root directory to [`nnunet_mpt/run`](nnunet_mpt/run), then the traini
 - 3D MPT: [`MPT.sh`](nnunet_mpt/run/MPT.sh)
 - MPTUNETR: [`MPTUNETR.sh`](nnunet_mpt/run/MPTUNETR.sh)
 - 2D MPT: [`MPT2D.sh`](nnunet_mpt/run/MPT2D.sh)
+### Acknowledgments
+Thanks for the codebase from nnUNet(https://github.com/MIC-DKFZ/nnUNet), MedNeXt(https://github.com/MIC-DKFZ/MedNeXt) and VovelMorph-Diff(https://github.com/voxelmorph/voxelmorph). If MPT proves useful for your research or applications, we would appreciate it if you could cite our work.
