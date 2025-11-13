@@ -1,5 +1,5 @@
 # MPTransformer
-This is the offical repository for MPT ("Adaptive Morph-Patch Transformer for Arotic Vessel Segmentation"), and the code within will be organized and refined later.
+This is the offical repository for MPT ("Adaptive Morph-Patch Transformer for Aortic Vessel Segmentation"), and the code within will be organized and refined later.
 ### Data Preprocessing
 The aortic dataset used in this project is sourced from the [AVT Challenge](https://multicenteraorta.grand-challenge.org).  
 The preprocessing pipeline follows the standard procedures used in [nnU-Net v1](https://github.com/MIC-DKFZ/nnUNet/tree/nnunetv1) and [MedNeXt](https://github.com/MIC-DKFZ/MedNeXt), ensuring compatibility with state-of-the-art segmentation frameworks.
