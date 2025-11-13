@@ -1,5 +1,5 @@
 # MPTransformer
-This is the offical repository for MPT ("Adaptive Morph-Patch Transformer for Aortic Vessel Segmentation"), and the code within will be organized and refined later.
+This is the offical repository for MPT ([Adaptive Morph-Patch Transformer for Aortic Vessel Segmentation](https://arxiv.org/abs/2511.06897)), and the code within will be organized and refined later.
 ### Data Preprocessing
 The aortic dataset used in this project is sourced from the [AVT Challenge](https://multicenteraorta.grand-challenge.org).  
 The preprocessing pipeline follows the standard procedures used in [nnU-Net v1](https://github.com/MIC-DKFZ/nnUNet/tree/nnunetv1) and [MedNeXt](https://github.com/MIC-DKFZ/MedNeXt), ensuring compatibility with state-of-the-art segmentation frameworks.
@@ -20,3 +20,13 @@ Switch the root directory to [`nnunet_mpt/run`](nnunet_mpt/run), then the traini
 - 2D MPT: [`MPT2D.sh`](nnunet_mpt/run/MPT2D.sh)
 ### Acknowledgments
 Thanks for the codebase from [nnUNet](https://github.com/MIC-DKFZ/nnUNet), [MedNeXt](https://github.com/MIC-DKFZ/MedNeXt) and [VovelMorph](https://github.com/voxelmorph/voxelmorph). If MPT proves useful for your research or applications, we would appreciate it if you could cite our work.
+
+### Citations
+```bibtex
+@article{zhang2025adaptive,
+  title={Adaptive Morph-Patch Transformer for Arotic Vessel Segmentation},
+  author={Zhang, Zhenxi and Zheng, Fuchen and Iltaf, Adnan and Han, Yifei and Cheng, Zhenyu and Du, Yue and Li, Bin and Liu, Tianyong and Zhou, Shoujun},
+  journal={arXiv preprint arXiv:2511.06897},
+  year={2025}
+}
+```
