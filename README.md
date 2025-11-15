@@ -1,5 +1,7 @@
 # MPTransformer
 This is the offical repository for MPT ([Adaptive Morph-Patch Transformer for Aortic Vessel Segmentation](https://arxiv.org/abs/2511.06897)), and the code within will be organized and refined later.
+### Quick Start
+If you want to quickly use our embedding method, we provide ready-to-use 2D and 3D modules in the [`morphembeding`](morphembeding) folder. Here, DscPatchEmb generates deformable patches by directly creating the deformation field, while MorphPatchEmb first derives the deformation field from a velocity field and then uses it to create deformable patches.
 ### Data Preprocessing
 The aortic datasets used in this project are sourced from [AVT Challenge](https://multicenteraorta.grand-challenge.org), [TBAD Challenge](https://www.kaggle.com/datasets/xiaoweixumedicalai/imagetbad) and [AortaSeg24 Challenge](https://aortaseg24.grand-challenge.org).  
 The preprocessing pipeline follows the standard procedures used in [MedNeXt](https://github.com/MIC-DKFZ/MedNeXt), ensuring compatibility with prevailed segmentation frameworks.
